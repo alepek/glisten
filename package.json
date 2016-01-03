@@ -1,0 +1,39 @@
+{
+  "name": "glisten",
+  "version": "1.0.0",
+  "description": "Because everyone needs a styleguide!",
+  "scripts": {
+    "test": "echo NYI",
+    "lint": "eslint src/js/**/*.js && stylint src/**/*.styl",
+    "precommit": "npm run -s lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alepek/glisten.git"
+  },
+  "keywords": [
+    "styleguide",
+    "css",
+    "postcss"
+  ],
+  "author": "Alexander Pekkari",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alepek/glisten/issues"
+  },
+  "homepage": "https://github.com/alepek/glisten#readme",
+  "devDependencies": {
+    "autoprefixer": "^6.2.3",
+    "eslint": "^1.10.3",
+    "eslint-config-google": "^0.3.0",
+    "grunt": "^0.4.5",
+    "grunt-cli": "^0.1.13",
+    "grunt-contrib-watch": "^0.6.1",
+    "husky": "^0.10.2",
+    "postcss": "^5.0.13",
+    "poststylus": "^0.2.2",
+    "rucksack-css": "^0.8.5",
+    "stylint": "^1.3.5",
+    "stylint-stylish": "^1.2.0"
+  }
+}
