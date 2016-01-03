@@ -1,7 +1,7 @@
 {
   "blocks": false,
   "brackets": "never",
-  "colons": "always",
+  "colons": "never",
   "colors": "always",
   "commaSpace": "always",
   "commentSpace": "always",
@@ -46,10 +46,7 @@
     "expect": "never",
     "error": true
   },
-  "sortOrder": {
-    "expect": "grouped",
-    "error": true
-  },
+  "sortOrder": "none",
   "stackedProperties": {
     "expect": "never",
     "error": true

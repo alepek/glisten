@@ -4,8 +4,8 @@
   "description": "Because everyone needs a styleguide!",
   "scripts": {
     "test": "echo NYI",
-    "lint": "eslint src/js/**/*.js && stylint src/**/*.styl",
-    "precommit": "npm run -s lint"
+    "lint": "stylint src/style",
+    "precommit": "npm run lint"
   },
   "repository": {
     "type": "git",
@@ -28,8 +28,11 @@
     "eslint-config-google": "^0.3.0",
     "grunt": "^0.4.5",
     "grunt-cli": "^0.1.13",
+    "grunt-contrib-jade": "^0.15.0",
     "grunt-contrib-watch": "^0.6.1",
+    "grunt-stylint": "^0.1.2",
     "husky": "^0.10.2",
+    "jeet": "^6.1.2",
     "postcss": "^5.0.13",
     "poststylus": "^0.2.2",
     "rucksack-css": "^0.8.5",
