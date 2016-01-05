@@ -3,25 +3,38 @@
 
 $full-width = 100
 $columns = 12
-$gutter = 1
+$gutter = 0
+
+*
+  box-sizing border-box
 
 .container
   width unit($full-width, '%')
   margin auto
   overflow hidden
+  max-width $max-width
 
-div[class^="c-"]
+.row
+  clearfix()
+
+  &.has-g >
+    [class^="c-"]
+      &:not(:first-child)
+        padding-left 8px
+      &:not(:last-child)
+        padding-right 8px
+
+
+[class^="c-"]
   display inline
   float left
-  margin-left unit($gutter, '%')
-  margin-right unit($gutter, '%')
 
 for col in 1..$columns
   .c-{col}
     width unit((col / $columns - $gutter / 100 * 2) * 100, '%')
 
 @media screen and (max-width: 520px)
-  div[class^="c-"]
+  [class^="c-"]
     float none
     display block
     width 100%

@@ -1,0 +1,60 @@
+.nav
+  height 70px
+  font-size 1.2rem
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, .2)
+
+  .nav-container
+    max-width: $max-width
+    margin 0 auto
+
+  a
+    text-decoration none
+
+  .logo,
+  .items
+    display inline-block
+
+  .logo
+    display flex
+    align-items center
+    float left
+    height 70px
+    margin 0 1rem
+
+  .items
+    float right
+
+  .item
+    position relative
+    display flex
+    align-items center
+    float left
+    height 40px
+    padding 0
+    margin 1rem
+    text-transform uppercase
+
+    &:last-child
+      margin-right 0
+
+    &:before,
+    &:after
+      border-bottom: 2px solid lighten($colors.blue, 20%)
+      content " "
+      transition width .2s ease
+      position absolute
+      bottom 0
+
+    &:before
+      right 50%
+      width 0%
+
+    &:after
+      left 50%
+      width 0%
+
+    &:hover
+      &:before
+        width 50%
+      &:after
+        width 50%

@@ -1,5 +1,31 @@
 extends shared/layout
 
+mixin colors(i, j)
+  each color, index in ['text', 'brown', 'grey', 'yellow', 'orange', 'red', 'blue', 'green']
+    if index >= i && index <= j
+      .c-3
+        .color(class='bg-' + color)
+          .color-desc
+            p= color
+
+
 block body
-  section.container
-    p Colors
+  .container
+    section.color-section
+
+      .section-heading
+        h1 Colors
+        p.text-and-code
+          span All colors are availabe as
+          code c-[color-name]
+          span to set the
+          code color
+          span and
+          code bg-[color-name]
+          span to set the
+          code background-color
+
+      .row.color-container
+        +colors(0,3)
+      .row.color-container
+        +colors(4,7)
