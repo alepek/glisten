@@ -3,7 +3,7 @@ extends shared/layout
 mixin colors(i, j)
   each color, index in ['text', 'brown', 'grey', 'yellow', 'orange', 'red', 'blue', 'green']
     if index >= i && index <= j
-      .c-3
+      .c-3.color-container
         .color(class='bg-' + color)
           .color-desc
             p= color
@@ -25,7 +25,7 @@ block body
           span to set the
           code background-color
 
-      .row.color-container
+      .row
         +colors(0,3)
-      .row.color-container
+      .row
         +colors(4,7)
