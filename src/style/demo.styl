@@ -1,5 +1,7 @@
 @import colors
 
+$border-color = lighten($colors.grey, 75%)
+
 body
   margin 0
   padding 0 0 2rem
@@ -11,10 +13,17 @@ section
   .section-heading
     margin 0 auto
     text-align center
-    margin-bottom 3rem
+    margin 2rem 2rem 3rem
 
   .sub-heading
-    border-bottom: 1px solid $colors.grey
+    border-bottom: 1px solid $border-color
+
+  .section-intro
+    margin 3rem
+    text-align center
+
+    > *
+      margin 1rem 2rem
 
 .text-and-code
   span,
@@ -29,6 +38,7 @@ code
   background #ececec
   padding 2px 4px
   border-radius 2px
+  white-space nowrap
 
 // Landing
 
