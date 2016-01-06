@@ -1,0 +1,18 @@
+$colors = {
+  text: #3F3A3F,
+  brown: #50514F,
+  grey: #ACABA9,
+  orange: #F2915C,
+  red: #E64F4C,
+  yellow: #FFE066,
+  blue: #247BA0,
+  green: #70C1B3
+}
+
+for key, value in $colors
+  .c-{key}
+    color value
+
+  .bg-{key}
+    background-color value
+
