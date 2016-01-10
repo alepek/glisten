@@ -32,7 +32,7 @@ module.exports = function(grunt) {
     },
     watch: {
       style: {
-        files: ['src/style/*.*'],
+        files: ['src/style/**/*.*'],
         tasks: ['stylus'],
         options: {
           spawn: false,
