@@ -3,7 +3,7 @@ extends shared/layout
 mixin colors(i, j)
   each color, index in ['text', 'brown', 'grey', 'yellow', 'orange', 'red', 'blue', 'green']
     if index >= i && index <= j
-      .c-3.color-container
+      .c-4.cl-3.color-container
         .color(class='bg-' + color)
           .color-desc
             p= color
@@ -15,17 +15,16 @@ block body
 
       .section-heading
         h1 Colors
+
+      .section-intro
         p.text-and-code
           span All colors are availabe as
-          code c-[color-name]
-          span to set the
-          code color
-          span and
-          code bg-[color-name]
-          span to set the
-          code background-color
+          code .c-[color-name]
+          span to set the color, and
+          code .bg-[color-name]
+          span to set the background-color.
 
       .row
-        +colors(0,3)
-      .row
-        +colors(4,7)
+        +colors(0,2)
+        +colors(3,5)
+        +colors(6,8)

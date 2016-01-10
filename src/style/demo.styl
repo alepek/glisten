@@ -1,4 +1,31 @@
-@import colors
+@import 'glisten/colors'
+@import nav
+
+$border-color = lighten($colors.grey, 75%)
+$nice-shadow = 0 1px 2px 0 rgba(63, 58, 63, .25)
+
+@media screen and (max-width: 719px)
+  table
+    td
+      padding .5rem
+
+  .section-intro
+    > *
+      margin 1rem .5rem
+
+
+@media screen and (min-width: 720px)
+  .section-heading
+    margin 2rem 2rem 3rem
+  .section-intro
+    margin 3rem
+
+    > *
+      margin 1rem 2rem
+
+  table
+    td
+      padding .5rem 2rem .5rem .5rem
 
 body
   margin 0
@@ -11,29 +38,58 @@ section
   .section-heading
     margin 0 auto
     text-align center
-    margin-bottom 3rem
 
   .sub-heading
-    border-bottom: 1px solid $colors.grey
+    border-bottom: 1px solid $border-color
+
+  .section-intro
+    text-align center
+    table
+      margin 0 auto
+
+.tooltip
+  padding .5rem 1rem
+  margin 1rem 0
+  box-shadow: $nice-shadow
+  border-top-right-radius 4px
+  border-bottom-right-radius 4px
+
+  &.is-info
+    border-left: 5px solid $colors.green
+  &.is-warning
+    border-left: 5px solid $colors.orange
 
 .text-and-code
   span,
   code
+    margin 0 .25em
+    display inline-block
     &:first-child
       margin-left 0
     &:last-child
       margin-right 0
-    margin 0 .25em
+
+
+table
+  border-radius 4px
+  box-shadow: $nice-shadow
+  text-align left
+
+  thead
+    background #ececec
+
+  td
+    padding .5rem
 
 code
-  background #ececec
+  background $border-color
   padding 2px 4px
   border-radius 2px
+  white-space nowrap
 
 // Landing
 
 // Colors
-
 .color-container
   .color
     margin 0 auto 2rem
@@ -50,3 +106,20 @@ code
     position absolute
     bottom 1rem
     text-shadow 0px 1px 1px #555555
+
+// Grid demo
+.grid-examples
+  .row
+    margin-bottom 1rem
+
+    [class^="c-"]
+      &:not(:first-child)
+        border-left 1px solid #ccc
+      &:not(:last-child)
+        border-right 1px solid #ccc
+
+    code
+      width 100%
+      display inline-block
+      padding .5rem
+      background: $border-color

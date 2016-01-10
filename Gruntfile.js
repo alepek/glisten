@@ -25,7 +25,7 @@ module.exports = function(grunt) {
           use: [postcss]
         },
         files: {
-          'dist/style/glisten.css': 'src/style/index.styl',
+          'dist/style/glisten.css': 'src/style/glisten/index.styl',
           'dist/style/demo.css': 'src/style/demo.styl'
         }
       }

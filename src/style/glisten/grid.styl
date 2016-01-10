@@ -1,0 +1,54 @@
+// Super simple grid system inspired by https://gist.github.com/JeffreyWay/1481756
+// Extends to full width of parent container and collapses under 520px.
+
+$full-width = 100
+$columns = 12
+$gutter = 0
+
+*
+  box-sizing border-box
+
+.container
+  width unit($full-width, '%')
+  margin auto
+  overflow hidden
+  max-width $max-width
+
+.row
+  clearfix()
+
+  @media screen and (min-width: 360px) and (max-width: 719px)
+    &.has-g >
+      [class^="c-"]
+        &:not(:first-child)
+          padding-left .5rem
+        &:not(:last-child)
+          padding-right .5rem
+  @media screen and (min-width: 720px)
+    &.has-gl >
+      [class^="c-"]
+        &:not(:first-child)
+          padding-left .5rem
+        &:not(:last-child)
+          padding-right .5rem
+
+[class^="c-"]
+  display inline
+  float left
+
+@media screen and (max-width: 359px)
+  [class^="c-"]
+    float none
+    display block
+    width 100%
+    margin 0
+
+@media screen and (min-width: 360px)
+  for col in 1..$columns
+    .c-{col}
+      width unit((col / $columns - $gutter / 100 * 2) * 100, '%')
+
+@media screen and (min-width: 720px)
+  for col in 1..$columns
+    .cl-{col}
+      width unit((col / $columns - $gutter / 100 * 2) * 100, '%')
