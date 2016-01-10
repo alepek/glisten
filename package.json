@@ -5,7 +5,8 @@
   "scripts": {
     "test": "echo NYI",
     "lint": "stylint src/style/glisten",
-    "precommit": "npm run lint"
+    "precommit": "npm run lint",
+    "prepare-gh-pages": "grunt prepare-gh-pages && cp -a ./dist/. ./  "
   },
   "repository": {
     "type": "git",

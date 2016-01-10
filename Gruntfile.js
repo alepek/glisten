@@ -53,6 +53,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-jade');
 
   grunt.registerTask("default", ["watch"]);
-  grunt.registerTask("cssnext", ["cssnext"]);
+  grunt.registerTask("prepare-gh-pages", ["jade", "stylus"]);
   grunt.registerTask("postcss", ["postcss"]);
 };
