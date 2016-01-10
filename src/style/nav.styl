@@ -40,20 +40,22 @@ $max-width = 920px
     &:after
       border-bottom: 2px solid lighten($colors.blue, 20%)
       content " "
-      transition width .2s ease
+      transition all .2s ease
       position absolute
       bottom 0
+      opacity 0
 
     &:before
       right 50%
-      width 0%
+      width 20%
 
     &:after
       left 50%
-      width 0%
+      width 20%
 
     &:hover
-      &:before
-        width 50%
+      &:before,
       &:after
+        opacity 1
+        width 50%
         width 50%
