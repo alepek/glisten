@@ -1,0 +1,58 @@
+// Typography - everything font-related
+
+html,
+body
+  color: $colors.text
+  font-family 'Lato', sans-serif
+  font-size 16px
+  line-height 1.6
+
+p
+  line-height 1.55
+
+a
+  color: $colors.blue
+  transition all .2s ease
+  &:hover
+      color: lighten($colors.blue, 20%)
+
+h1
+  font-size 2.25rem
+h2
+  font-size 1.75rem
+h3
+  font-size 1.5rem
+h4
+  font-size 1.25rem
+h5
+  font-size 1rem
+h6
+  font-size .8rem
+
+.t-left
+  text-align left
+.t-center
+  text-align center
+.t-right
+  text-align right
+
+.f-left
+  float left
+.f-right
+  float right
+
+.is-bold
+  font-weight bold
+.is-italic
+  font-style italic
+
+.t-confirm
+  color: $colors.green
+.t-info
+  color: $colors.blue
+.t-warning
+  color: $colors.orange
+.t-error
+  color: $colors.red
+.t-muted
+  color: $colors.grey

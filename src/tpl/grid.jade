@@ -4,15 +4,88 @@ block body
   section.container
     .section-heading
       h1 Grid
-    .c-6
-      p c-6
-    .c-6
-      p c-6
-    .c-12
-      p c-12
-    .c-4
-      p c-4
-    .c-5
-      p c-5
-    .c-3
-      p c-3
+
+    .section-intro
+      table
+        thead
+          tr
+            td
+              span Column classes
+            td
+              span Applicable dimensions
+        tbody
+          tr
+            td.text-and-code
+              code .c-1
+              span ...
+              code .c-12
+            td
+               span From 360px device width and up (mobile)
+          tr
+            td.text-and-code
+              code .cl-1
+              span ...
+              code .cl-12
+            td
+              span From 720px device width and up (desktop)
+
+      p On devices under 360px wide each column is rendered on a separate row.
+
+      P.text-and-code
+        span An optional
+        code .has-g
+        span and
+        code .has-gl
+        span class can be applied on the
+        code .row
+        span to enable gutters on that row, for that size.
+
+      p Gutters are 1 rem wide, split evenly between non-first-child and non-last-child columns.
+
+    h2.sub-heading Examples
+    .tooltip.is-info
+      span Resize the browser, or view the page on a different device, to see the grid in action.
+    .grid-examples
+      h4 Without gutters
+      .row
+        .c-12.cl-6
+          code .c-12.cl-6
+        .c-12.cl-6
+          code .c-12.cl-6
+      .row
+        .c-6.cl-3
+          code .c-6.cl-3
+        .c-6.cl-3
+          code .c-6.cl-3
+        .c-12.cl-3
+          code .c-12.cl-3
+        .c-12.cl-3
+          code .c-12.cl-3
+      h4 With mobile gutters
+      .row.has-g
+        .c-4
+          code .c-4
+        .c-4
+          code .c-4
+        .c-4
+          code .c-4
+      h4 With desktop gutters
+      .row.has-gl
+        .c-12.cl-5
+          code .c-12.cl-5
+        .c-12.cl-5
+          code .c-5
+        .c-12.cl-2
+          code .c-2
+      h4 With desktop and mobile gutters
+      .row.has-g.has-gl
+        .c-6
+          code .c-6
+        .c-6
+          code .c-6
+        .c-6
+          code .c-6
+        .c-6
+          code .c-6
+      .tooltip.is-warning
+        span As illustrated above, gutters are not adapted to work in situations where the total amount of columns in a row exceeds 12. Keep this in mind when using them, and try to split content into multiple rows in such situations.

@@ -4,7 +4,7 @@
   "description": "Because everyone needs a styleguide!",
   "scripts": {
     "test": "echo NYI",
-    "lint": "stylint src/style",
+    "lint": "stylint src/style/glisten",
     "precommit": "npm run lint"
   },
   "repository": {
