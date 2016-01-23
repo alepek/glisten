@@ -7,7 +7,7 @@
     <title>Glisten</title>
   </head>
   <body>
-    <div class="nav">
+    <div id="main-nav" class="nav">
       <div class="nav-container"><a href="index.html" class="logo">Glisten</a>
         <div class="items"><a href="colors.html" class="item">Colors</a><a href="typography.html" class="item">Typography</a><a href="grid.html" class="item">Grid</a><a href="images.html" class="item">Images</a></div>
       </div>
@@ -24,38 +24,40 @@
         <sapn>Thumbnails come in three sizes:</sapn><code>120x120</code><code>180x180</code><code>240x240</code><span>:</span>
       </p>
       <div class="image-thumbnails-examples">
-        <div class="img-thumb is-circle is-s"><img src="http://placehold.it/120x120/4F4A4F/F2915C"/></div>
-        <div class="img-thumb is-circle is-m"><img src="http://placehold.it/180x180/4F4A4F/F2915C"/></div>
-        <div class="img-thumb is-circle is-l"><img src="http://placehold.it/240x240/4F4A4F/F2915C"/></div>
+        <div class="img-thumb is-s"><img src="http://placehold.it/120x120/4F4A4F/F2915C"/></div>
+        <div class="img-thumb is-m"><img src="http://placehold.it/180x180/4F4A4F/F2915C"/></div>
+        <div class="img-thumb is-l"><img src="http://placehold.it/240x240/4F4A4F/F2915C"/></div>
       </div>
       <p class="text-and-code t-center"><span>Thumbnails are used by wrapping an</span><code>img</code><span>in</span><code>.img-thumb</code><span>and one of these size classes:</span><code>.is-s</code><code>.is-m</code><code>.is-l</code></p>
       <p class="text-and-code t-center"><span>Images are resized to fit within their container. Thumbnails require rectangular images to not distort the image ratio.</span></p>
       <div class="image-thumbnails-examples">
-        <div class="img-thumb is-circle is-m"><img src="http://placehold.it/320x320/4F4A4F/F2915C"/></div>
-        <div class="img-thumb is-circle is-m"><img src="http://placehold.it/480x480/4F4A4F/F2915C"/></div>
+        <div class="img-thumb is-m"><img src="http://placehold.it/320x320/4F4A4F/F2915C"/></div>
+        <div class="img-thumb is-m"><img src="http://placehold.it/480x480/4F4A4F/F2915C"/></div>
       </div>
       <h2 class="sub-heading">Image with caption</h2>
       <p class="text-and-code t-center"><span>To give an image a caption, wrap it in a</span><code>.img-captioned</code><span>and add an</span><code>img</code><span>and</span><code>.caption</code><span>inside.</span></p>
       <div class="image-caption-examples">
-        <div class="img-captioned"><img src="http://placehold.it/640x320/4F4A4F/F2915C"/>
+        <div class="img-captioned"><img src="http://placehold.it/640x320/4F4A4F/F2915C" width="320"/>
           <div class="caption">
             <p>This is a caption - a good place for some info about the image.</p>
           </div>
         </div>
-        <div class="img-captioned"><img src="http://placehold.it/480x100/4F4A4F/F2915C"/>
+        <div class="img-captioned"><img src="http://placehold.it/960x200/4F4A4F/F2915C" width="480"/>
           <div class="caption">
             <h4>Here's another example - this time with a heading as a caption.</h4>
           </div>
         </div>
       </div>
     </section>
+    <section class="container">
+      <div class="col-12">
+        <div class="separator"></div><a href="https://github.com/alepek/glisten" class="github-link"><img src="http://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png" class="img-responsive"/></a>
+      </div>
+    </section>
     <script src="js/instantclick.js" data-no-instant=""></script>
     <script data-no-instant="">
       InstantClick.init();
       console.log(InstantClick);
-      
     </script>
   </body>
-  <footer>
-  </footer>
 </html>
