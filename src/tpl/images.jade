@@ -4,6 +4,58 @@ block body
   section.container
     .section-heading
       h1 Images
-
     .section-intro
+      p The images library of glisten contain some simple styling for thumbnails as well as larger images.
 
+    h2.sub-heading Thumbnails
+    p.text-and-code.t-center
+      sapn Thumbnails come in three sizes:
+      code 120x120
+      code 180x180
+      code 240x240
+      span :
+    .image-thumbnails-examples
+      .img-thumb.is-circle.is-s
+        img(src="http://placehold.it/120x120/4F4A4F/F2915C")
+      .img-thumb.is-circle.is-m
+        img(src="http://placehold.it/180x180/4F4A4F/F2915C")
+      .img-thumb.is-circle.is-l
+        img(src="http://placehold.it/240x240/4F4A4F/F2915C")
+
+    p.text-and-code.t-center
+      span Thumbnails are used by wrapping an
+      code img
+      span in
+      code .img-thumb
+      span and one of these size classes:
+      code .is-s
+      code .is-m
+      code .is-l
+    p.text-and-code.t-center
+      span Images are resized to fit within their container. Thumbnails require rectangular images to not distort the image ratio.
+    .image-thumbnails-examples
+      .img-thumb.is-circle.is-m
+        img(src="http://placehold.it/320x320/4F4A4F/F2915C")
+      .img-thumb.is-circle.is-m
+        img(src="http://placehold.it/480x480/4F4A4F/F2915C")
+
+    h2.sub-heading Image with caption
+    p.text-and-code.t-center
+      span To give an image a caption, wrap it in a
+      code .img-captioned
+      span and add an
+      code img
+      span and
+      code .caption
+      span inside.
+
+    .image-caption-examples
+      .img-captioned
+        img(src="http://placehold.it/640x320/4F4A4F/F2915C")
+        .caption
+          p This is a caption - a good place for some info about the image.
+
+      .img-captioned
+        img(src="http://placehold.it/480x100/4F4A4F/F2915C")
+        .caption
+          h4 Here's another example - this time with a heading as a caption.
