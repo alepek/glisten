@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1"/>
+    <link href="style/glisten.css" rel="stylesheet" type="text/css"/>
+    <link href="style/demo.css" rel="stylesheet" type="text/css"/>
+    <title>Glisten</title>
+  </head>
+  <body>
+    <div class="nav">
+      <div class="nav-container"><a href="index.html" class="logo">Glisten</a>
+        <div class="items"><a href="colors.html" class="item">Colors</a><a href="typography.html" class="item">Typography</a><a href="grid.html" class="item">Grid</a><a href="images.html" class="item">Images</a></div>
+      </div>
+    </div>
+    <section class="container">
+      <div class="section-heading">
+        <h1>Grid</h1>
+      </div>
+      <div class="section-intro">
+        <table>
+          <thead>
+            <tr>
+              <td><span>Column classes</span></td>
+              <td><span>Applicable dimensions</span></td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="text-and-code"><code>.c-1</code><span>..</span><code>.c-12</code></td>
+              <td><span>From 360px device width and up (mobile)</span></td>
+            </tr>
+            <tr>
+              <td class="text-and-code"><code>.cl-1</code><span>..</span><code>.cl-12</code></td>
+              <td><span>From 720px device width and up (desktop)</span></td>
+            </tr>
+          </tbody>
+        </table>
+        <p>On devices under 360px wide each column is rendered on a separate row.</p>
+        <P class="text-and-code"><span>An optional</span><code>.has-g</code><span>and</span><code>.has-gl</code><span>class can be applied on the</span><code>.row</code><span>to enable gutters on that row, for that size.</span></P>
+        <p>Gutters are 1 rem wide, split evenly between non-first-child and non-last-child columns.</p>
+      </div>
+      <h2 class="sub-heading">Examples</h2>
+      <div class="tooltip is-info"><span>Resize the browser, or view the page on a different device, to see the grid in action.</span></div>
+      <div class="grid-examples">
+        <h4>Without gutters</h4>
+        <div class="row">
+          <div class="c-12 cl-6"><code>.c-12.cl-6</code></div>
+          <div class="c-12 cl-6"><code>.c-12.cl-6</code></div>
+        </div>
+        <div class="row">
+          <div class="c-6 cl-3"><code>.c-6.cl-3</code></div>
+          <div class="c-6 cl-3"><code>.c-6.cl-3</code></div>
+          <div class="c-12 cl-3"><code>.c-12.cl-3</code></div>
+          <div class="c-12 cl-3"><code>.c-12.cl-3</code></div>
+        </div>
+        <h4>With mobile gutters</h4>
+        <div class="row has-g">
+          <div class="c-4"><code>.c-4</code></div>
+          <div class="c-4"><code>.c-4</code></div>
+          <div class="c-4"><code>.c-4</code></div>
+        </div>
+        <h4>With desktop gutters</h4>
+        <div class="row has-gl">
+          <div class="c-12 cl-5"><code>.c-12.cl-5</code></div>
+          <div class="c-12 cl-5"><code>.c-5</code></div>
+          <div class="c-12 cl-2"><code>.c-2</code></div>
+        </div>
+        <h4>With desktop and mobile gutters</h4>
+        <div class="row has-g has-gl">
+          <div class="c-6"><code>.c-6</code></div>
+          <div class="c-6"><code>.c-6</code></div>
+          <div class="c-6"><code>.c-6</code></div>
+          <div class="c-6"><code>.c-6</code></div>
+        </div>
+        <div class="tooltip is-warning"><span>As illustrated above, gutters are not adapted to work in situations where the total amount of columns in a row exceeds 12. Keep this in mind when using them, and try to split content into multiple rows in such situations.</span></div>
+      </div>
+    </section>
+    <script src="js/instantclick.js" data-no-instant=""></script>
+    <script data-no-instant="">
+      InstantClick.init();
+      console.log(InstantClick);
+      
+    </script>
+  </body>
+  <footer>
+  </footer>
+</html>
