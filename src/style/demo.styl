@@ -4,40 +4,17 @@
 $border-color = lighten($colors.grey, 75%)
 $nice-shadow = 0 1px 2px 0 rgba(63, 58, 63, .25)
 
-@media screen and (max-width: 719px)
-  table
-    td
-      padding .5rem
-
-  .section-intro
-    > *
-      margin 1rem .5rem
-
-
-@media screen and (min-width: 720px)
-  .section-heading
-    margin 2rem 2rem 3rem
-  .section-intro
-    margin 3rem
-
-    > *
-      margin 1rem 2rem
-
-  table
-    td
-      padding .5rem 2rem .5rem .5rem
-
 #instantclick-bar {
-  background: $colors.blue
+  background: $colors.orange
 }
 
 body
   margin 0
-  padding 0 0 2rem
 
 section
   margin 0 auto
   padding 0 1rem
+  overflow hidden
 
   .section-heading
     margin 0 auto
@@ -50,6 +27,9 @@ section
     text-align center
     table
       margin 0 auto
+
+a
+  text-decoration none
 
 .tooltip
   padding .5rem 1rem
@@ -73,7 +53,6 @@ section
     &:last-child
       margin-right 0
 
-
 table
   border-radius 4px
   box-shadow: $nice-shadow
@@ -92,7 +71,25 @@ code
   border-radius 2px
   white-space nowrap
 
+.separator
+  margin-top 5rem
+  border-top: 1px solid $border-color
+
+.github-link
+  display block;
+  opacity .25
+  width 80px
+  height 80px
+  margin 2rem auto
+
+  &:hover
+    opacity .75
+
 // Landing
+
+.glisten-intro
+  margin 3rem 0 8rem
+  text-align center
 
 // Typopgraphy
 .heading-examples
@@ -155,3 +152,29 @@ code
 
   .img-captioned
     margin-bottom 3rem
+
+@media screen and (max-width: 719px)
+  table
+    td
+      padding .5rem
+
+  .section-intro
+    > *
+      margin 1rem .5rem
+
+
+@media screen and (min-width: 720px)
+  .glisten-intro
+    margin-left 6rem
+    margin-right 6rem
+  .section-heading
+    margin 2rem 2rem 3rem
+  .section-intro
+    margin 3rem
+
+    > *
+      margin 1rem 2rem
+
+  table
+    td
+      padding .5rem 2rem .5rem .5rem

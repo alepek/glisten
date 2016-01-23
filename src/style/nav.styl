@@ -3,14 +3,24 @@ $max-width = 920px
 .nav
   height 70px
   font-size 1.2rem
-  box-shadow: 0 0 2px 1px rgba($colors.text, .33)
+  box-shadow: 0 1px 2px 0 rgba(63, 58, 63, .5)
+  background: $colors.brown
+  color: $colors.orange
 
   .nav-container
     max-width: $max-width
     margin 0 auto
 
+  p,
+  span,
+  li,
+  ul,
   a
     text-decoration none
+    color: $colors.orange
+
+  a:hover
+    color: lighten($colors.orange, 20%)
 
   .logo,
   .items
@@ -38,7 +48,7 @@ $max-width = 920px
 
     &:before,
     &:after
-      border-bottom: 2px solid lighten($colors.blue, 20%)
+      border-bottom: 2px solid lighten($colors.orange, 20%)
       content " "
       transition all .2s ease
       position absolute
