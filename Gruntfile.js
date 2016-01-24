@@ -54,5 +54,4 @@ module.exports = function(grunt) {
 
   grunt.registerTask("default", ["watch"]);
   grunt.registerTask("prepare-gh-pages", ["jade", "stylus"]);
-  grunt.registerTask("postcss", ["postcss"]);
 };
