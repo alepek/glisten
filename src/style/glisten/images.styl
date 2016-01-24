@@ -6,15 +6,28 @@
   height auto
 
 .img-captioned
+  &.is-s
+    width 320px
+  &.is-m
+    width 480px
+  &.is-l
+    width 640px
   img
-    border-radius $radius
-    padding $radius
-    box-shadow 0 2px 2px 0 rgba(0,0,0, .25)
+    max-width 100%
+    display block
+    border-top-right-radius $radius
+    border-top-left-radius $radius
+
   .caption
+    border: 1px solid $colors.grey
+    border-bottom-right-radius $radius
+    border-bottom-left-radius $radius
+    border-top none
     text-align center
     > *
-      margin-top .5rem
-      margin-bottom 1.5rem
+      margin-top 0
+      padding-top .5rem
+      margin-bottom .5rem
 
 .img-thumb
   img
