@@ -47,28 +47,43 @@ block body
       code img
       span and
       code .caption
-      span inside. Choose a size by adding one of these classes:
-      code .is-s (320px)
-      code .is-m (480px)
-      code .is-l (640px)
+      span inside. Choose a size by adding one of the classes described in each caption below, or just add a column class to select their width across devices. These options can not be combined.
+
+
+
 
     .image-caption-examples
+
+      .row
+        .img-captioned.c-12.cl-6
+          img(src="http://placehold.it/900x240/4F4A4F/F2915C")
+          .caption
+            p
+              code .c-12.cl-6
+            p This image with caption is responsive. Since the image will stretch, make sure to pick an image that works for the column sizes you've chosen.
+
       .img-captioned.is-s
-        img(src="http://placehold.it/640x320/4F4A4F/F2915C")
+        img(src="http://placehold.it/640x100/4F4A4F/F2915C")
         .caption
+          p
+            code .is-s (320px)
           p This is a caption - a good place for some info about the image.
 
       .img-captioned.is-m
-        img(src="http://placehold.it/960x200/4F4A4F/F2915C")
+        img(src="http://placehold.it/960x160/4F4A4F/F2915C")
         .caption
+          p
+            code .is-m (480px)
           p This image and its caption is 480px wide
 
       .img-captioned.is-l
-        img(src="http://placehold.it/1200x320/4F4A4F/F2915C")
+        img(src="http://placehold.it/1280x240/4F4A4F/F2915C")
         .caption
+          p
+            code .is-l (640px)
           p.t-muted Yet another example, with some muted text.
 
     .tooltip.is-warning
-        span Heads up! Captioned images are not responsive and will not degrade gracefully. Make sure you pick a suitable size!
+        span Heads up! Captioned images with a size class are not responsive and will not degrade gracefully. Make sure you pick a suitable size or go responsive!
 
 
