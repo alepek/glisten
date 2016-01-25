@@ -35,25 +35,36 @@
         <div class="img-thumb is-m"><img src="http://placehold.it/480x480/4F4A4F/F2915C"/></div>
       </div>
       <h2 class="sub-heading">Image with caption</h2>
-      <p class="text-and-code t-center"><span>To give an image a caption, wrap it in a</span><code>.img-captioned</code><span>and add an</span><code>img</code><span>and</span><code>.caption</code><span>inside. Choose a size by adding one of these classes:</span><code>.is-s (320px)</code><code>.is-m (480px)</code><code>.is-l (640px)</code></p>
+      <p class="text-and-code t-center"><span>To give an image a caption, wrap it in a</span><code>.img-captioned</code><span>and add an</span><code>img</code><span>and</span><code>.caption</code><span>inside. Choose a size by adding one of the classes described in each caption below, or just add a column class to select their width across devices. These options can not be combined.</span></p>
       <div class="image-caption-examples">
-        <div class="img-captioned is-s"><img src="http://placehold.it/640x320/4F4A4F/F2915C"/>
+        <div class="row">
+          <div class="img-captioned c-12 cl-6"><img src="http://placehold.it/900x240/4F4A4F/F2915C"/>
+            <div class="caption">
+              <p><code>.c-12.cl-6</code></p>
+              <p>This image with caption is responsive. Since the image will stretch, make sure to pick an image that works for the column sizes you've chosen.</p>
+            </div>
+          </div>
+        </div>
+        <div class="img-captioned is-s"><img src="http://placehold.it/640x100/4F4A4F/F2915C"/>
           <div class="caption">
+            <p><code>.is-s (320px)</code></p>
             <p>This is a caption - a good place for some info about the image.</p>
           </div>
         </div>
-        <div class="img-captioned is-m"><img src="http://placehold.it/960x200/4F4A4F/F2915C"/>
+        <div class="img-captioned is-m"><img src="http://placehold.it/960x160/4F4A4F/F2915C"/>
           <div class="caption">
+            <p><code>.is-m (480px)</code></p>
             <p>This image and its caption is 480px wide</p>
           </div>
         </div>
-        <div class="img-captioned is-l"><img src="http://placehold.it/1200x320/4F4A4F/F2915C"/>
+        <div class="img-captioned is-l"><img src="http://placehold.it/1280x240/4F4A4F/F2915C"/>
           <div class="caption">
+            <p><code>.is-l (640px)</code></p>
             <p class="t-muted">Yet another example, with some muted text.</p>
           </div>
         </div>
       </div>
-      <div class="tooltip is-warning"><span>Heads up! Captioned images are not responsive and will not degrade gracefully. Make sure you pick a suitable size!</span></div>
+      <div class="tooltip is-warning"><span>Heads up! Captioned images with a size class are not responsive and will not degrade gracefully. Make sure you pick a suitable size or go responsive!</span></div>
     </section>
     <section class="container">
       <div class="c-12 footer-links">
